@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatiable" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@700&family=Orbitron:wght@600&family=Tektur:wght@500&display=swap" rel="stylesheet">
+    <title>STR AUTO</title>
+    <style>
+      
+        body {
+            background: black;
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         font-family: 'Istok Web', sans-serif;
+font-family: 'Orbitron', sans-serif;
+font-family: 'Tektur', cursive;
+
+
+}
+h1 {
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+    color: #f9f6f6;
+}
+.container , p {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    color: #e98670;
+ 
+}
+
+        button {
+    background-color: #64d394;
+    color: white;
+    padding: 12px 20px;
+    border: 1px solid #839bc6;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-family: 'orbitron', sans-serif;
+    font-size: 17px;
+
+}
+button:hover {
+    background-color: #4b8b4e;
+    cursor: pointer;
+}
+input[type=text], input[type=email], input[type=tel], input[type=number], textarea, select {
+    background-color: transparent;
+    width: 70%;
+    outline: none;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #071327;
+    border-radius: 8px;
+    box-sizing:border-box;
+    resize: vertical;
+    color: rgb(235, 223, 223);
+    font-size: 14px;
+    
+
+}
+label {
+    padding: 0;
+    display:grid;
+}
+    </style>
+</head>
+<body>
+    <img src="IMG_5239.PNG" alt="logo" width="300px">
+
+    <h1>АНКЕТА</h1>
+    <p>Пожалуйста, заполните анкету</p>
+    <p>Все поля обязательны для заполнения</p>
+    <div class="container">
+       
+       
+    
+    <form action="https://formspree.io/f/mdorzbqq" method="POST">
+        <label for="name">Имя Фамилия</label>
+        <input required type="text" name="name" id="name" placeholder="Введите имя фамилию" required>
+        <br>
+        <label for="age">Возраст</label>
+        <input required type="number" name="age" id="age" placeholder="Введите возраст" required>
+        <br>
+        <label for="email">Email</label>
+        <input required type="email" name="email" id="email" placeholder="Введите email" required>
+        <br>
+        <label for="phone">Телефон</label>
+        <input type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
+        <br>
+        <label for="state">Штат Проживания</label>
+        <input required type="text" name="state" id="state" placeholder="Введите штат" required>
+        <br>
+        <label for="work">Work Authorization</label>
+        <select name="work" id="work">
+            <option value="true">Да</option>
+            <option value="false">Нет</option>
+        </select>
+        <br>
+        <label for="licence">Права какого Штата</label>
+        <input type="text" name="licence" id="licence" placeholder="Введите штат">
+        <br>
+        <label for="relationship">Семейное положение</label>
+        <select name="Marital Status" id="relationship">
+            <option value="single">Не женат/Не замужем</option>
+            <option value="married">Женат/Замужем</option>
+        </select>
+    <br>
+    <label for="company">Действующая LLC?</label>
+    <select name="company" id="company">
+        <option value="true">Да</option>
+        <option value="false">Нет</option>
+    </select>
+    <br>
+    <label for="experience">Опыт работы</label>
+    <select name="experience" id="experience">
+        <option value="true">Да</option>
+        <option value="false">Нет</option>
+    </select>
+
+    <br>
+    <label for="experience">Если да, то какой? Опишите ваш опыт</label>
+    <textarea name="experience" id="experience" placeholder="Опишите опыт работы"></textarea>
+        <br>
+        <label for="listing">Как вы о нас узнали?</label>
+        <select name="listing" id="listing">
+            <option value="facebook">Facebook</option>
+            <option value="telegram">Telegram</option>
+            <option value="other">Other</option>
+        </select>
+        <br>
+        <label for="message">Сообщение</label>
+        <textarea name="message" id="message" placeholder="Введите сообщение"></textarea>
+        <br>
+        <button type="submit">Отправить</button>
+        </form>
+        <p>После заполнения анкеты, мы свяжемся с Вами в течении 24 часов</p>
+        <p>Спасибо за проявленный интерес к нашей компании</p>
+      
+        
+        </div>
+        
+
+
+</body>
+</html>
+
+
